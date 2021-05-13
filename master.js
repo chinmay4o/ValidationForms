@@ -7,17 +7,11 @@ btn.addEventListener("click", function (e) {
   var address = document.querySelector("#home").value;
   var pincode = document.querySelector("#pincode").value;
   var food = getCheck();
-             console.log(food);
+        
   var gnd = getGender();
-  console.log(gnd);
   var state = document.querySelector("#state").value;
   var country = document.querySelector("#country").value;
   //   <<<<<<<<<< innertex0x0 >>>>>>>>>>>>>>
-  var validateAll = [fname, lname, address, pincode, food, gnd, state, country];
-  console.log(validateAll);
-  console.log(validateAll.length);
-
-
     if (fname && lname && address && pincode && 
       food && gnd && state && country ){
 
@@ -34,9 +28,6 @@ btn.addEventListener("click", function (e) {
       document.querySelector("#error").innerText ="Error: PLEASE FILL ALL THE DETAILS";
     }
 
-  // console.log(document.querySelector("#Gender"));
-      console.log(e);
-      console.log(e.target);
       e.preventDefault();
 });
 
@@ -76,10 +67,7 @@ function getCheck() {
     k++;
     food3 +=f5.value + ", ";
       }
-
-  console.log(k);
-  console.log(food3);
-
+  
   if (k !== 2) {
     document.querySelector("#error2").innerText ="Error: Please select any 2";
   } else{
