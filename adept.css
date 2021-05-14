@@ -161,3 +161,51 @@ button{
         /* align-items:space-between; */
     }
  }
+
+
+
+@media only screen and (max-width: 400px){
+    #parent{
+        display: block;
+        width: 430px;
+        margin: 40px 0 40px 30px;
+    }
+
+    form{
+        padding: 20px  ;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* align-items:space-between; */
+    }
+
+    input[type="text"]{
+       
+        background-color: #fff;
+        margin-top: 5px;
+        padding: 9px;
+        font-family: 'Martel Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1.2em;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid #8b3bd7;
+        width: 300px;
+        height: 30px;
+    }
+
+
+    .parent2{
+        width: 500px;
+        padding: 15px;
+        background-color: aquamarine;
+        margin: auto;
+        border-radius: 8px;
+     }
+
+     .child{
+         overflow-x: auto;
+     }
+
+ }
